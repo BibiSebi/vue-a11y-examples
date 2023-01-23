@@ -3,11 +3,10 @@
     id="accordionGroup"
     class="accordion w-full flex flex-col border border-emerald-600 rounded-md overflow-hidden"
   >
-    <AccordionItem title="Checkbox ✅" id="1"> <Checkbox /> </AccordionItem>
-
-    <AccordionItem title="Accordion Title" id="2">
+    <AccordionItem title="Accordion Item" id="2">
       Panel content 2</AccordionItem
     >
+    <AccordionItem title="Checkbox ✅" id="1"> <Checkbox /> </AccordionItem>
   </div>
 </template>
 

@@ -12,7 +12,12 @@
       >
         <span class="accordion-title flex justify-between">
           <span class="font-semibold">{{ props.title }}</span>
-          <img id="arrow-icon" alt="" src="@/assets/arrow_down.png" />
+          <img
+            id="arrow-icon"
+            class="transition-transform duration-500"
+            alt=""
+            src="@/assets/arrow_down.png"
+          />
         </span>
       </button>
     </h3>
@@ -61,4 +66,8 @@ const onExpand = (e: Event) => {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+button[aria-expanded="true"] #arrow-icon {
+  transform: rotate(180deg);
+}
+</style>
