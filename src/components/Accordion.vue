@@ -4,7 +4,9 @@
     class="accordion w-full flex flex-col border border-emerald-600 rounded-md overflow-hidden"
   >
     <AccordionItem title="Accordion Item" id="2">
-      Panel content 2</AccordionItem
+      An accessible accordion is an interactive element which allows users to hide and reveal additional content.
+
+    </AccordionItem
     >
     <AccordionItem title="Checkbox ✅" id="1"> <Checkbox /> </AccordionItem>
   </div>
