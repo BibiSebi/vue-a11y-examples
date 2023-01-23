@@ -27,7 +27,7 @@
       role="region"
       :aria-labelledby="'accor' + props.id"
       class="accordion-panel p-4 w-full"
-      hidden=""
+      hidden
     >
       <slot></slot>
     </div>
