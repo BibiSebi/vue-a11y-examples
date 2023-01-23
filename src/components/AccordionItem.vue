@@ -4,7 +4,7 @@
   >
     <h3 class="w-full">
       <button
-        class="w-full p-4 text-start hover:bg-emerald-100"
+        class="w-full p-4 text-start bg-transparent border-2 border-transparent hover:border-orange-500"
         aria-expanded="false"
         :aria-controls="'sect' + props.id"
         :id="'accor' + props.id"
@@ -12,11 +12,9 @@
       >
         <span class="accordion-title flex justify-between">
           <span class="font-semibold">{{ props.title }}</span>
-          <img
+          <IconArrowDown
             id="arrow-icon"
-            class="transition-transform duration-500"
-            alt=""
-            src="@/assets/arrow_down.png"
+            class="w-6 h-6 transition-transform duration-500 dark:fill-gray-400"
           />
         </span>
       </button>
@@ -35,6 +33,8 @@
 </template>
 
 <script setup lang="ts">
+import IconArrowDown from "@/components/icons/IconArrowDown.vue";
+
 const props = defineProps({
   id: String,
   title: String,
