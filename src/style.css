@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    div{
+        @apply text-lg
+    }
+
+    a {
+       @apply text-green-400 underline
+    }
+}
