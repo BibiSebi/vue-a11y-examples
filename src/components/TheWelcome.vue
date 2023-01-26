@@ -3,8 +3,6 @@ import WelcomeItem from "./WelcomeItem.vue";
 import DocumentationIcon from "./icons/IconDocumentation.vue";
 import ToolingIcon from "./icons/IconTooling.vue";
 import EcosystemIcon from "./icons/IconEcosystem.vue";
-import CommunityIcon from "./icons/IconCommunity.vue";
-import SupportIcon from "./icons/IconSupport.vue";
 </script>
 
 <template>
@@ -15,9 +13,16 @@ import SupportIcon from "./icons/IconSupport.vue";
     <template #heading>Presentation</template>
 
     You can find the slides on
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">Github</a>
+    <a
+      href="https://github.com/BibiSebi/a11y-meetup"
+      target="_blank"
+      rel="noopener"
+      >Github</a
+    >
     or by going visiting
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">this page.</a>
+    <a href="https://a11y-meetup.vercel.app/1" target="_blank" rel="noopener"
+      >this page</a
+    >.
   </WelcomeItem>
 
   <WelcomeItem>
@@ -26,32 +31,24 @@ import SupportIcon from "./icons/IconSupport.vue";
     </template>
     <template #heading>Tools</template>
 
-    This project is served and bundled with
+    Here you can find some tools that should help you check for accessibility
+    issues:
     <a
-      href="https://vitejs.dev/guide/features.html"
+      href="https://developer.chrome.com/docs/lighthouse/"
       target="_blank"
       rel="noopener"
-      >Vite</a
-    >. The recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener"
-      >VSCode</a
+      >Lighthouse</a
+    >,
+    <a
+      href="https://webaim.org/resources/contrastchecker/"
+      target="_blank"
+      rel="noopener"
+      >Contrast Checker</a
     >
-    +
-    <a
-      href="https://github.com/johnsoncodehk/volar"
-      target="_blank"
-      rel="noopener"
-      >Volar</a
-    >. If you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a>
     and
-    <a href="https://on.cypress.io/component" target="_blank"
-      >Cypress Component Testing</a
+    <a href="https://www.deque.com/axe/devtools/" target="_blank" rel="noopener"
+      >Axe DevTools</a
     >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
   </WelcomeItem>
 
   <WelcomeItem>
@@ -60,22 +57,35 @@ import SupportIcon from "./icons/IconSupport.vue";
     </template>
     <template #heading>Resources</template>
 
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener"
-      >Vue Router</a
+    If you want to dive deeper into this topic, here are some good resources to
+    help you start:
+
+    <a href="w3.org/WAI/WCAG21/quickref/" target="_blank" rel="noopener"
+      >WCAG Quickref</a
     >,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener"
-      >Vue Test Utils</a
-    >, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener"
-      >Vue Dev Tools</a
-    >. If you need more resources, we suggest paying
     <a
-      href="https://github.com/vuejs/awesome-vue"
+      href="https://www.udacity.com/course/web-accessibility--ud891"
       target="_blank"
       rel="noopener"
-      >Awesome Vue</a
+      >Web Accessibility Course</a
+    >,
+    <a
+      href="https://vue-a11y.com/project/#introduction"
+      target="_blank"
+      rel="noopener"
+      >Vue A11y</a
+    >, and
+    <a
+      href="https://vuejs.org/guide/best-practices/accessibility.html"
+      target="_blank"
+      rel="noopener"
+      >Vue</a
+    >. If you need more resources, I suggest paying
+    <a
+      href="https://github.com/vue-a11y/awesome-a11y-vue"
+      target="_blank"
+      rel="noopener"
+      >Awesome A11y Vue</a
     >
     a visit.
   </WelcomeItem>
