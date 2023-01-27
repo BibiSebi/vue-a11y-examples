@@ -7,10 +7,10 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h2>
+    <span>
       Interested in how to make your website more accessible? Then you are in
       the right place. 🤗
-    </h2>
+    </span>
   </div>
 </template>
 
