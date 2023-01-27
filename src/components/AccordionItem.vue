@@ -5,7 +5,7 @@
     <h3 class="w-full">
       <button
         class="w-full p-4 text-start bg-transparent border-2 border-transparent hover:border-orange-500"
-        aria-expanded="false"
+        :aria-expanded="isExpanded"
         :aria-controls="'sect' + props.id"
         :id="'accor' + props.id"
         @click="onExpand"
@@ -33,12 +33,20 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 import IconArrowDown from "@/components/icons/IconArrowDown.vue";
 
 const props = defineProps({
   id: String,
   title: String,
 });
+
+const isExpanded = ref(false);
+
+const toggleExpanded = () => {
+  isExpanded.value = !isExpanded.value;
+  return isExpanded;
+};
 
 const onExpand = (e: Event) => {
   const buttonElement: HTMLButtonElement = e.currentTarget as HTMLButtonElement;
@@ -54,15 +62,13 @@ const onExpand = (e: Event) => {
     return;
   }
 
-  const isExpanded = buttonElement.getAttribute("aria-expanded") === "true";
-  buttonElement.setAttribute("aria-expanded", `${!isExpanded}`);
-
-  if (isExpanded) {
+  if (isExpanded.value) {
     panel.setAttribute("hidden", "");
-    return;
+  } else {
+    panel.removeAttribute("hidden");
   }
 
-  panel.removeAttribute("hidden");
+  buttonElement.setAttribute("aria-expanded", `${!toggleExpanded()}`);
 };
 </script>
 
