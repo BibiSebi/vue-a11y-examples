@@ -13,7 +13,6 @@
         <span class="accordion-title flex justify-between">
           <span class="font-semibold">{{ props.title }}</span>
           <IconArrowDown
-            id="arrow-icon"
             class="w-6 h-6 transition-transform duration-500 dark:fill-gray-400"
           />
         </span>
@@ -73,7 +72,7 @@ const onExpand = (e: Event) => {
 </script>
 
 <style scoped>
-button[aria-expanded="true"] #arrow-icon {
+button[aria-expanded="true"] svg {
   transform: rotate(180deg);
 }
 </style>
