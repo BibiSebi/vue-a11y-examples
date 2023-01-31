@@ -13,6 +13,7 @@ const setupApp = (app: any) => {
 };
 // @ts-ignore
 if (process.env.NODE_ENV === "development") {
+  // @ts-ignore
   import(`vue-axe`).then((res) => {
     const VueAxe = res.default;
     const VueAxePopup = res.VueAxePopup;
