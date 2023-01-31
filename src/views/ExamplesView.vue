@@ -1,7 +1,7 @@
 <template>
-  <div class="examples">
+  <main class="examples">
     <Accordion />
-  </div>
+  </main>
 </template>
 
 <script setup lang="ts">

@@ -7,7 +7,10 @@
       An accessible accordion is an interactive element which allows users to
       hide and reveal additional content.
     </AccordionItem>
-    <AccordionItem title="Button ✅" id="1"> <Button /> </AccordionItem>
+    <AccordionItem title="Button ✅" id="1">
+      <Button />
+      <span lang="cs">Hallo, wie geht es dir?</span>
+    </AccordionItem>
   </div>
 </template>
 
