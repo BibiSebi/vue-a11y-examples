@@ -44,7 +44,6 @@ const isExpanded = ref(false);
 
 const toggleExpanded = () => {
   isExpanded.value = !isExpanded.value;
-  return isExpanded;
 };
 
 const onExpand = (e: Event) => {
@@ -67,7 +66,7 @@ const onExpand = (e: Event) => {
     panel.removeAttribute("hidden");
   }
 
-  buttonElement.setAttribute("aria-expanded", `${!toggleExpanded()}`);
+  toggleExpanded();
 };
 </script>
 
